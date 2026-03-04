@@ -97,6 +97,7 @@ Réponds UNIQUEMENT en JSON valide, zéro markdown, zéro backtick :
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "x-api-key": import.meta.env.VITE_ANTHROPIC_KEY,
           "anthropic-version": "2023-06-01",
           "anthropic-dangerous-direct-browser-access": "true",
         },
